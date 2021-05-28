@@ -3,7 +3,7 @@
     require('config/db.php');
 
     session_start();
-    $person = mysqli_query($conn, "SELECT * FROM person");
+    $person = mysqli_query($conn, "SELECT * FROM PERSON");
 
 ?>
 
@@ -24,13 +24,13 @@
 		
 			<div class="well">
                 <tbody>
-                <?php foreach($person as $person) : ?>
+                <?php foreach($PERSON as $PERSON) : ?>
                     <tr>
                     <th scope="row"><?php echo $person['id'];?></th>
-                    <td><?php echo $person['lname'];?></td>
-                    <td><?php echo $person['fname'];?></td>
-                    <td><?php echo $person['address'];?></td>
-                    <td><?php echo $person['date_logged'];?></td>
+                    <td><?php echo $PERSON['lastname'];?></td>
+                    <td><?php echo $PERSON['firstname'];?></td>
+                    <td><?php echo $PERSON['address'];?></td>
+                    <td><?php echo $PERSON['logdt'];?></td>
                     </tr>
                 <?php endforeach; ?>   
                 </tbody>
