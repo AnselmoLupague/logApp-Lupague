@@ -24,9 +24,9 @@
 		
 			<div class="well">
                 <tbody>
-                <?php foreach($PERSON as $PERSON) : ?>
+                <?php foreach($person as $PERSON) : ?>
                     <tr>
-                    <th scope="row"><?php echo $person['id'];?></th>
+                    <td><?php echo $PERSON['pid'];?></td>
                     <td><?php echo $PERSON['lastname'];?></td>
                     <td><?php echo $PERSON['firstname'];?></td>
                     <td><?php echo $PERSON['address'];?></td>
